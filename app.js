@@ -32,7 +32,7 @@ app.use(passport.session());
 app.use(bodyParser.urlencoded({extended: true}));
 
 
-mongoose.connect("mongodb+srv://dineshbankuru2004:"+process.env.MONGO+"@cluster0.5ptp29j.mongodb.net/covid" , {useNewUrlParser : true});
+mongoose.connect("mongodb+srv://dineshbankuru2004:"+process.env.MONGO+"@cluster0.f7z8mvo.mongodb.net/covid" , {useNewUrlParser : true});
 
 
 
