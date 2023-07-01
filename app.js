@@ -222,7 +222,7 @@ app.post("/slotdetails" , function(req,res){
                 booking:[{name: req.body.name , code: req.body.centre}]
             });
             slot.save().then(function(doc){
-                console.log(doc);
+                //console.log(doc);
             })
             .catch(function(err){
                 console.log(err);
@@ -237,7 +237,7 @@ app.post("/slotdetails" , function(req,res){
     .catch(function(err)
     {
         console.log(err);
-        console.log("Down");
+        //console.log("Down");
     })
 
     res.render("printpage" , {printpage:printpage});
@@ -259,7 +259,7 @@ app.post("/userregister", function(req,res){
         })
     })
     .catch(function(err){
-        console.log(err);
+        //console.log(err);
         res.redirect("/contact");
     })
 
@@ -279,7 +279,7 @@ app.post("/userlogin" , function(req,res){
     req.login(user , function(err){
         if(err)
         {
-            console.log(err);
+            //console.log(err);
             mes="!! Invalid credentials";
             res.redirect("/contact");
         }
@@ -335,7 +335,7 @@ app.post("/addcenter",function(req,res){
         }
     })
     .catch(function(err){
-        console.log(err);
+        //console.log(err);
     })
 })
 
@@ -356,7 +356,7 @@ app.post("/removecenter",function(req,res){
         }
     })
     .catch(function(err){
-        console.log(err);
+        //console.log(err);
     })
 })
 
